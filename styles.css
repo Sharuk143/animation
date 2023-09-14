@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white; /* Sky Blue */
+}
+.bat {
+    margin-left: 250px;
+}
+
+.cricket-ball {
+    width: 50px;
+    height: 50px;
+    margin-right: 100px;
+    background-color: #FF4500; /* Red-Orange */
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite alternate;
+}
+
+    .cricket-ball:before {
+        content: '';
+        position: absolute;
+        left: 23%;
+        top: 2%;
+        border: 2px solid  green;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-5);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
